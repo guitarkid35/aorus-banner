@@ -1,0 +1,122 @@
+html
+  head
+    title Aorus
+    //- Metadata
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    //- Favicon
+    link(rel='icon', type='image/png', href='assets/images/ico/favicon.png')
+    //- CSS Plugins
+    link(rel='stylesheet', href='assets/css/plugins.min.css')
+    //- Custom CSS File
+    link(rel='stylesheet', href='assets/css/style.css')
+    link(rel='stylesheet', href='assets/css/main.css')
+  body
+    .ms-main-container
+      //- Preloader
+      .ms-preloader
+      //- Header
+      header.ms-header.navbar-white
+        nav.ms-nav
+          .ms-logo
+            a(href='index.html', data-type='page-transition')
+              .logo-dark
+                img(src='logo-dark.svg', alt='logo image')
+              .logo-light.current
+                img(src='logo-light.svg', alt='logo image')
+          button.hamburger(type='button', data-toggle='navigation')
+            span.hamburger-box
+              span.hamburger-label menu
+              span.hamburger-inner
+          .height-full-viewport
+            ul.ms-navbar
+              //- Nav Link
+              li.nav-item
+                a(href='index.html', data-type='page-transition')
+                  span.ms-btn home
+                  span.nav-item__label Back to home page
+              li.nav-item
+                a(href='about.html', data-type='page-transition')
+                  span.ms-btn about
+                  span.nav-item__label Learn more about the author
+      //- Container
+      main.ms-container.home-slider
+        //- Swiper Slider
+        .swiper-container
+          .swiper-wrapper
+            //- Slide
+            .swiper-slide
+              .slide-inner(data-swiper-parallax='45%')
+                .overlay
+                .slide-inner--square
+                  svg#glow_line(viewBox='0 0 1334 761', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                    defs
+                      lineargradient#linearGradient-1(x1='100%', y1='0%', x2='0%', y2='100%')
+                        stop(stop-color='#FE7416', offset='0%')
+                        stop(stop-color='#C51E46', offset='100%')
+                    g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                      g#Desktop-HD(transform='translate(-53.000000, -132.000000)', stroke='url(#linearGradient-1)', stroke-width='2')
+                        rect#square(x='54', y='133', width='1332', height='759')
+                .slide-inner--bg
+            //- Slide
+            .swiper-slide
+              .slide-inner(data-swiper-parallax='45%')
+                .overlay
+                .slide-inner--image(style="background-image: url('assets/images/home-slider/img-lg.jpg')")
+                .slide-inner--info
+                  h1
+                    | snowiest
+                    br
+                    | worshipper
+                  a.ms-btn--slider(href='gallery.html', data-type='page-transition') take a look
+            //- Slide
+            .swiper-slide
+              .slide-inner(data-swiper-parallax='45%')
+                .overlay
+                .slide-inner--image(style="background-image: url('assets/images/home-slider/img-lg.jpg')")
+                .slide-inner--info
+                  h1
+                    | romantic
+                    br
+                    | chipping
+                  a.ms-btn--slider(href='gallery.html', data-type='page-transition') take a look
+            //- Slide
+            .swiper-slide
+              .slide-inner(data-swiper-parallax='45%')
+                .overlay
+                .slide-inner--image(style="background-image: url('assets/images/home-slider/img-lg.jpg')")
+                .slide-inner--info
+                  h1
+                    | farthest
+                    br
+                    | dawning
+                  a.ms-btn--slider(href='gallery.html', data-type='page-transition') take a look
+          .swiper-nav-btn
+            .swiper-button-prev.swiper-button-white prev
+            .swiper-button-next.swiper-button-white next
+          //- Pagination
+          .expanded-timeline
+            .expanded-timeline__counter
+              span
+              span
+            .swiper-pagination
+            .scroll-message
+              svg.scroll-svg(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 16.5 15.98')
+                title Asset 1
+                g
+                  g(data-name='Layer 1')
+                    polygon(fill='#fff', points='0 4.64 0.71 5.34 3.85 2.2 3.85 15.98 4.85 15.98 4.85 2.2 8 5.34 8.71 4.64 4.35 0.29 0 4.64')
+                    polygon(fill='#fff', points='11.65 0 11.65 13.79 8.5 10.64 7.79 11.35 12.15 15.7 16.5 11.35 15.79 10.64 12.65 13.79 12.65 0 11.65 0')
+              | Scroll
+      //- /Container
+      //- JS Libraries
+      //- jquery-2.1.3.min js
+      script(type='text/javascript', src='assets/js/jquery-3.2.1.min.js')
+      //- Vendors
+      script(type='text/javascript', src='assets/js/plugins.min.js')
+      //- Main js
+      script(type='text/javascript', src='assets/js/main.js')
+      //- timeline js
+      script(type='text/javascript', src='assets/js/vendors/timelineMax-dist.js')
+      //- custom js
+      script(type='text/javascript', src='assets/js/custom-dist.js')
