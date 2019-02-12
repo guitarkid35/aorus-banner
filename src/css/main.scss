@@ -1,15 +1,29 @@
-@mixin center {
+@mixin absolute_center {
   top:50%;
   left:50%;
   transform: translate(-50%,-50%) !important;
+}
+@mixin pic_center {
+  position: absolute;
+  bottom: 0px;
+  left: 0px
+}
+@mixin full_screen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+@mixin bg_center {
+  background-size: cover;
+  background-position: center;
 }
 /*---Square line---*/
 .slide-inner--square {
   width: 65vw;
   height: 65vh;
   position: absolute;
-  @include center;
-  z-index: 999;
+  @include absolute_center;
+  z-index: 998;
 
   #glow_line { 
     width: 100%;
@@ -46,15 +60,77 @@
   }
 }
 
-/*---slide1 bg---*/
-.slide-inner--bg {
-  position: absolute;
-  margin-top: 6%;
+// /*---slide1 bg---*/
+.slide-inner--item {
   width: 100%;
   height: 100%;
-  @include center;
-  // background-image: url('../../assets/images/home-slider/lcd-f.png');
-  // background-size: cover;
-  // background-position: center;
+  &_mask {
+    #robot_mask {
+      width: 2000px;
+      position: absolute;
+      @include absolute_center;
+      z-index: 999;
+    }
+  }
+  &_body {
+    @include full_screen;
+    animation-name: robot-path;
+    animation-duration: 5s;
+    animation-delay:2s;
+    animation-fill-mode: both;
+    background-image: url('../../assets/images/home-slider/robot-body.jpg');
+    @include bg_center;
+  }
+  &_eye {
+    @include full_screen;
+    opacity: 0;
+    animation-name: robot-eye;
+    animation-duration: 1s;
+    animation-delay:2s;
+    animation-fill-mode: both;
+    background-image: url('../../assets/images/home-slider/robot-body-eye.png');
+    @include bg_center;
+  }
+  &_light {
+    @include full_screen;
+    animation-name: robot-path;
+    animation-duration: 5s;
+    animation-delay:2s;
+    animation-fill-mode: both;
+    background-image: url('../../assets/images/home-slider/robot-body-light.png');
+    @include bg_center;
+  }
+  &_logo {
+    @include full_screen;
+    animation-name: robot-logo;
+    animation-duration: 1s;
+    animation-delay:2s;
+    animation-fill-mode: both;
+    background-image: url('../../assets/images/home-slider/robot-body-logo.png');
+    @include bg_center;
+  }
 }
-
+@keyframes robot-eye {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    filter: brightness(250%);
+  }
+  100% {
+    opacity: 1;
+    filter: brightness(100%);
+  }
+}
+@keyframes robot-logo {
+  0% {
+    filter: brightness(0%);
+  }
+  50% {
+    filter: brightness(250%);
+  }
+  100% {
+    filter: brightness(100%);
+  }
+}

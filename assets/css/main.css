@@ -8,7 +8,7 @@
   -webkit-transform: translate(-50%, -50%) !important;
   -ms-transform: translate(-50%, -50%) !important;
   transform: translate(-50%, -50%) !important;
-  z-index: 999;
+  z-index: 998;
 }
 
 .slide-inner--square #glow_line {
@@ -78,15 +78,149 @@
   }
 }
 
-/*---slide1 bg---*/
-.slide-inner--bg {
-  position: absolute;
-  margin-top: 6%;
+.slide-inner--item {
   width: 100%;
   height: 100%;
+}
+
+.slide-inner--item_mask #robot_mask {
+  width: 2000px;
+  position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) !important;
   -ms-transform: translate(-50%, -50%) !important;
   transform: translate(-50%, -50%) !important;
+  z-index: 999;
+}
+
+.slide-inner--item_body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-animation-name: robot-path;
+  animation-name: robot-path;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  background-image: url("../../assets/images/home-slider/robot-body.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-inner--item_eye {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  -webkit-animation-name: robot-eye;
+  animation-name: robot-eye;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  background-image: url("../../assets/images/home-slider/robot-body-eye.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-inner--item_light {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-animation-name: robot-path;
+  animation-name: robot-path;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  background-image: url("../../assets/images/home-slider/robot-body-light.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-inner--item_logo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-animation-name: robot-logo;
+  animation-name: robot-logo;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  background-image: url("../../assets/images/home-slider/robot-body-logo.png");
+  background-size: cover;
+  background-position: center;
+}
+
+@-webkit-keyframes robot-eye {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    -webkit-filter: brightness(250%);
+    filter: brightness(250%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+  }
+}
+
+@keyframes robot-eye {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    -webkit-filter: brightness(250%);
+    filter: brightness(250%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+  }
+}
+
+@-webkit-keyframes robot-logo {
+  0% {
+    -webkit-filter: brightness(0%);
+    filter: brightness(0%);
+  }
+  50% {
+    -webkit-filter: brightness(250%);
+    filter: brightness(250%);
+  }
+  100% {
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+  }
+}
+
+@keyframes robot-logo {
+  0% {
+    -webkit-filter: brightness(0%);
+    filter: brightness(0%);
+  }
+  50% {
+    -webkit-filter: brightness(250%);
+    filter: brightness(250%);
+  }
+  100% {
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+  }
 }
