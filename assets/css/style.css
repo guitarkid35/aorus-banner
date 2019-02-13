@@ -644,8 +644,7 @@ p {
     transition: opacity .6s ease-in-out, transform 2s ease .7s;
 }
 .swiper-slide-duplicate-active .slide-inner--image,
-.swiper-slide-active .slide-inner--image,
-.swiper-slide-active  {
+.swiper-slide-active .slide-inner--image{
     opacity: 1;
     transform: scale(1);
 }

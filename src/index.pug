@@ -48,21 +48,20 @@ html
             .swiper-slide
               .slide-inner(data-swiper-parallax='45%')
                 .overlay
-                .slide-inner--image
-                  .slide-inner--item
-                    .slide-inner--item_mask
-                      svg#robot_mask(width='3000px', height='3000px', viewBox='0 0 3212 3212', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
-                        defs
-                          filter#filter-1(x='-32.9%', y='-32.9%', width='165.9%', height='165.9%', filterUnits='objectBoundingBox')
-                            feGaussianblur(stdDeviation='49', in='SourceGraphic')
-                        g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
-                          g#mask(transform='translate(624.000000, 624.000000)', stroke='#000000', stroke-width='1000')
-                            circle#circle(filter='url(#filter-1)', cx='982', cy='982', r='982')    
-                    .slide-inner--item_body
-                    .slide-inner--item_eye
-                    .slide-inner--item_light
-                    .slide-inner--item_logo
-                .slide-inner--square
+                .slide-inner--item
+                  .slide-inner--item_mask
+                  .slide-inner--item_screen
+                  .slide-inner--item_bg
+                  .slide-inner--item_lens
+                  .slide-inner--item_body
+                  .slide-inner--item_eye
+                  .slide-inner--item_light
+                  .slide-inner--item_logo
+            //- Slide
+            .swiper-slide
+              .slide-inner(data-swiper-parallax='45%')
+                .overlay
+                //- .slide-inner--square
                   svg#glow_line(viewBox='0 0 1334 761', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
                     defs
                       lineargradient#linearGradient-1(x1='100%', y1='0%', x2='0%', y2='100%')
@@ -71,11 +70,6 @@ html
                     g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
                       g#Desktop-HD(transform='translate(-53.000000, -132.000000)', stroke='url(#linearGradient-1)', stroke-width='2')
                         rect#square(x='54', y='133', width='1332', height='759')
-            //- Slide
-            .swiper-slide
-              .slide-inner(data-swiper-parallax='45%')
-                .overlay
-                .slide-inner--image(style="background-image: url('assets/images/home-slider/img-lg.jpg')")
                 .slide-inner--info
                   h1
                     | snowiest

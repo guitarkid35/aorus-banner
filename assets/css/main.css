@@ -83,64 +83,121 @@
   height: 100%;
 }
 
-.slide-inner--item_mask #robot_mask {
-  width: 2000px;
+.slide-inner--item_mask {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) !important;
-  -ms-transform: translate(-50%, -50%) !important;
-  transform: translate(-50%, -50%) !important;
-  z-index: 999;
+  -webkit-animation-name: robot-mask;
+  animation-name: robot-mask;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  z-index: 997;
+}
+
+.slide-inner--item_screen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../../assets/images/home-slider/robot-screen.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 1002;
+  opacity: 0;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.slide-inner--item_bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../../assets/images/home-slider/robot-bg.png");
+  -webkit-animation-name: robot-bg;
+  animation-name: robot-bg;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-size: cover;
+  background-position: center;
+  z-index: 1001;
+  opacity: 0;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.slide-inner--item_lens {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-animation-name: robot-lens;
+  animation-name: robot-lens;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  background-image: url("../../assets/images/home-slider/robot-lens.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  z-index: 1000;
 }
 
 .slide-inner--item_body {
   width: 100%;
   height: 100%;
   position: absolute;
-  -webkit-animation-name: robot-path;
-  animation-name: robot-path;
-  -webkit-animation-duration: 5s;
-  animation-duration: 5s;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
   background-image: url("../../assets/images/home-slider/robot-body.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .slide-inner--item_eye {
+  opacity: 0;
   width: 100%;
   height: 100%;
   position: absolute;
-  opacity: 0;
   -webkit-animation-name: robot-eye;
   animation-name: robot-eye;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   background-image: url("../../assets/images/home-slider/robot-body-eye.png");
   background-size: cover;
   background-position: center;
+  z-index: 998;
 }
 
 .slide-inner--item_light {
+  opacity: 0;
   width: 100%;
   height: 100%;
   position: absolute;
-  -webkit-animation-name: robot-path;
-  animation-name: robot-path;
-  -webkit-animation-duration: 5s;
-  animation-duration: 5s;
+  -webkit-animation-name: robot-light;
+  animation-name: robot-light;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   background-image: url("../../assets/images/home-slider/robot-body-light.png");
   background-size: cover;
   background-position: center;
@@ -152,28 +209,152 @@
   position: absolute;
   -webkit-animation-name: robot-logo;
   animation-name: robot-logo;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-delay: 1.7s;
+  animation-delay: 1.7s;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
   background-image: url("../../assets/images/home-slider/robot-body-logo.png");
   background-size: cover;
   background-position: center;
+  z-index: 999;
 }
 
-@-webkit-keyframes robot-eye {
+@-webkit-keyframes robot-mask {
   0% {
-    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
   }
   50% {
-    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes robot-mask {
+  0% {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@-webkit-keyframes robot-bg {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    -webkit-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+}
+
+@keyframes robot-bg {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    -webkit-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+}
+
+@-webkit-keyframes robot-lens {
+  0% {
+    -webkit-filter: brightness(250%);
+    filter: brightness(250%);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+  }
+  50% {
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+    -webkit-transform: scaleX(3);
+    transform: scaleX(3);
+  }
+  100% {
+    -webkit-filter: brightness(0%);
+    filter: brightness(0%);
+    opacity: 0;
+  }
+}
+
+@keyframes robot-lens {
+  0% {
+    -webkit-filter: brightness(250%);
+    filter: brightness(250%);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+  }
+  50% {
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+    -webkit-transform: scaleX(3);
+    transform: scaleX(3);
+  }
+  100% {
+    -webkit-filter: brightness(0%);
+    filter: brightness(0%);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes robot-light {
+  0% {
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+  }
+  50% {
     -webkit-filter: brightness(250%);
     filter: brightness(250%);
   }
   100% {
-    opacity: 1;
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+  }
+}
+
+@keyframes robot-light {
+  0% {
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+  }
+  50% {
+    -webkit-filter: brightness(250%);
+    filter: brightness(250%);
+  }
+  100% {
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+  }
+}
+
+@-webkit-keyframes robot-eye {
+  0% {
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+  }
+  50% {
+    -webkit-filter: brightness(500%);
+    filter: brightness(500%);
+  }
+  100% {
     -webkit-filter: brightness(100%);
     filter: brightness(100%);
   }
@@ -181,15 +362,14 @@
 
 @keyframes robot-eye {
   0% {
-    opacity: 0;
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
   }
   50% {
-    opacity: 1;
-    -webkit-filter: brightness(250%);
-    filter: brightness(250%);
+    -webkit-filter: brightness(500%);
+    filter: brightness(500%);
   }
   100% {
-    opacity: 1;
     -webkit-filter: brightness(100%);
     filter: brightness(100%);
   }
@@ -197,30 +377,30 @@
 
 @-webkit-keyframes robot-logo {
   0% {
-    -webkit-filter: brightness(0%);
-    filter: brightness(0%);
+    -webkit-filter: grayscale(100%) brightness(70%);
+    filter: grayscale(100%) brightness(70%);
   }
   50% {
-    -webkit-filter: brightness(250%);
-    filter: brightness(250%);
+    -webkit-filter: grayscale(50%) brightness(300%);
+    filter: grayscale(50%) brightness(300%);
   }
   100% {
-    -webkit-filter: brightness(100%);
-    filter: brightness(100%);
+    -webkit-filter: grayscale(0%) brightness(100%);
+    filter: grayscale(0%) brightness(100%);
   }
 }
 
 @keyframes robot-logo {
   0% {
-    -webkit-filter: brightness(0%);
-    filter: brightness(0%);
+    -webkit-filter: grayscale(100%) brightness(70%);
+    filter: grayscale(100%) brightness(70%);
   }
   50% {
-    -webkit-filter: brightness(250%);
-    filter: brightness(250%);
+    -webkit-filter: grayscale(50%) brightness(300%);
+    filter: grayscale(50%) brightness(300%);
   }
   100% {
-    -webkit-filter: brightness(100%);
-    filter: brightness(100%);
+    -webkit-filter: grayscale(0%) brightness(100%);
+    filter: grayscale(0%) brightness(100%);
   }
 }
