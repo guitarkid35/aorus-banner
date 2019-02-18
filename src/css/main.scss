@@ -173,6 +173,18 @@
 /*---slide2 bg---*/
 .slide-inner--image {
   background-image: url('../../assets/images/home-slider/HUD-bg.jpg');
+  .slide-inner--HUD-screen {
+    position: absolute;
+    background-image: url('../../assets/images/home-slider/HUD-screen.png');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation-name: robot-bg;
+    animation-duration: 6s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+  }
 }
 .slide-inner--HUD {
   width: 100%;
@@ -182,7 +194,12 @@
   .slide-inner--HUD-box {
     width: 100%;
     height: 100%;
-    transform: translate(-300px, -100px);
+    transform: translate(-310px, -100px);
+    &_hud_bg {
+      @include full_screen;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
     &_logo {
       @include full_screen;
       background-image: url('../../assets/images/home-slider/HUD-A.png');
@@ -220,65 +237,61 @@
     }
     &_bar {
       @include full_screen;
-      transform:rotateX(-28deg) rotateY(-25deg) rotateZ(-2deg) translate(350px,-20px) scale(0.3);
+      transform:rotateX(-28deg) rotateY(-25deg) rotateZ(-2.3deg) translate(380px,-80px) scale(0.25);
       filter: drop-shadow(0 0 0.75rem #2272D2) brightness(150%);
       #up {
         #Fill-10 {
           opacity: 0;
           animation-name: fill-a;
           animation-duration: 2s;
-          animation-delay :2s;
+          animation-delay :3.5s;
           animation-iteration-count: infinite;
           animation-timing-function: linear;
-          animation-fill-mode: backwards;
+          animation-fill-mode: forwards;  
         }
         #Fill-9 {
           opacity: 0;
           animation-name: fill-b;
           animation-duration: 2s;
-          animation-delay :1.5s;
+          animation-delay :3s;
           animation-iteration-count: infinite;
           animation-timing-function: linear;
-          animation-fill-mode: backwards;
+          animation-fill-mode: forwards;  
         }
         #Fill-8 {
           opacity: 0;
           animation-name: fill-c;
           animation-duration: 2s;
-          animation-delay :1s;
+          animation-delay :2.5s;
           animation-iteration-count: infinite;
           animation-timing-function: linear;
-          animation-fill-mode: backwards;
+          animation-fill-mode: forwards;  
         }
         #Fill-7 {
           opacity: 0;
           animation-name: fill-d;
           animation-duration: 2s;
-          animation-delay :0.5s;
+          animation-delay :2s;
           animation-iteration-count: infinite;
           animation-timing-function: linear;
-          animation-fill-mode: backwards;
+          animation-fill-mode: forwards;  
         }
       }
       @keyframes fill-a {
         0% {opacity: 0;}
-        50%{opacity: 1;}
-        100% {opacity: 0;}
+        25% {opacity: 1;}
       }
       @keyframes fill-b {
         0% {opacity: 0;}
-        50%{opacity: 1;}
-        100% {opacity: 0;}
+        50% {opacity: 1;}
       }
       @keyframes fill-c {
         0% {opacity: 0;}
-        50%{opacity: 1;}
-        100% {opacity: 0;}
+        75% {opacity: 1;}
       }
       @keyframes fill-d {
         0% {opacity: 0;}
-        50%{opacity: 1;}
-        100% {opacity: 0;}
+        100% {opacity: 1;}
       }
     }
   }  

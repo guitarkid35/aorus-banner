@@ -331,6 +331,23 @@
   background-image: url("../../assets/images/home-slider/HUD-bg.jpg");
 }
 
+.slide-inner--image .slide-inner--HUD-screen {
+  position: absolute;
+  background-image: url("../../assets/images/home-slider/HUD-screen.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -webkit-animation-name: robot-bg;
+  animation-name: robot-bg;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
 .slide-inner--HUD {
   width: 100%;
   height: 100%;
@@ -342,9 +359,17 @@
 .slide-inner--HUD .slide-inner--HUD-box {
   width: 100%;
   height: 100%;
-  -webkit-transform: translate(-300px, -100px);
-  -ms-transform: translate(-300px, -100px);
-  transform: translate(-300px, -100px);
+  -webkit-transform: translate(-310px, -100px);
+  -ms-transform: translate(-310px, -100px);
+  transform: translate(-310px, -100px);
+}
+
+.slide-inner--HUD .slide-inner--HUD-box_hud_bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .slide-inner--HUD .slide-inner--HUD-box_logo {
@@ -409,8 +434,8 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  -webkit-transform: rotateX(-28deg) rotateY(-25deg) rotateZ(-2deg) translate(350px, -20px) scale(0.3);
-  transform: rotateX(-28deg) rotateY(-25deg) rotateZ(-2deg) translate(350px, -20px) scale(0.3);
+  -webkit-transform: rotateX(-28deg) rotateY(-25deg) rotateZ(-2.3deg) translate(380px, -80px) scale(0.25);
+  transform: rotateX(-28deg) rotateY(-25deg) rotateZ(-2.3deg) translate(380px, -80px) scale(0.25);
   -webkit-filter: drop-shadow(0 0 0.75rem #2272D2) brightness(150%);
   filter: drop-shadow(0 0 0.75rem #2272D2) brightness(150%);
 }
@@ -421,14 +446,14 @@
   animation-name: fill-a;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
-  -webkit-animation-fill-mode: backwards;
-  animation-fill-mode: backwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .slide-inner--HUD .slide-inner--HUD-box_bar #up #Fill-9 {
@@ -437,14 +462,14 @@
   animation-name: fill-b;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-delay: 1.5s;
-  animation-delay: 1.5s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
-  -webkit-animation-fill-mode: backwards;
-  animation-fill-mode: backwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .slide-inner--HUD .slide-inner--HUD-box_bar #up #Fill-8 {
@@ -453,14 +478,14 @@
   animation-name: fill-c;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
-  -webkit-animation-fill-mode: backwards;
-  animation-fill-mode: backwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .slide-inner--HUD .slide-inner--HUD-box_bar #up #Fill-7 {
@@ -469,25 +494,22 @@
   animation-name: fill-d;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
-  -webkit-animation-fill-mode: backwards;
-  animation-fill-mode: backwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes fill-a {
   0% {
     opacity: 0;
   }
-  50% {
+  25% {
     opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }
 
@@ -495,11 +517,8 @@
   0% {
     opacity: 0;
   }
-  50% {
+  25% {
     opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }
 
@@ -510,9 +529,6 @@
   50% {
     opacity: 1;
   }
-  100% {
-    opacity: 0;
-  }
 }
 
 @keyframes fill-b {
@@ -522,20 +538,14 @@
   50% {
     opacity: 1;
   }
-  100% {
-    opacity: 0;
-  }
 }
 
 @-webkit-keyframes fill-c {
   0% {
     opacity: 0;
   }
-  50% {
+  75% {
     opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }
 
@@ -543,11 +553,8 @@
   0% {
     opacity: 0;
   }
-  50% {
+  75% {
     opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }
 
@@ -555,11 +562,8 @@
   0% {
     opacity: 0;
   }
-  50% {
-    opacity: 1;
-  }
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
 
@@ -567,11 +571,8 @@
   0% {
     opacity: 0;
   }
-  50% {
-    opacity: 1;
-  }
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
 
