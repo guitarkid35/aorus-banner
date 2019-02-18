@@ -1,5 +1,32 @@
-.nav-target_a::after {
-  content: url(https://guitarkid35.github.io/2018-GK-resume/);
+/*---logo fadeIn---*/
+.ms-logo {
+  -webkit-animation-name: logofadeIn;
+  animation-name: logofadeIn;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-delay: 3s !important;
+  animation-delay: 3s !important;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  opacity: 0;
+}
+
+@-webkit-keyframes logofadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes logofadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*---slide1 bg---*/
@@ -371,6 +398,14 @@
   -webkit-transform: translate(-310px, -100px);
   -ms-transform: translate(-310px, -100px);
   transform: translate(-310px, -100px);
+}
+
+@media (max-width: 1280px) {
+  .slide-inner--HUD .slide-inner--HUD-box {
+    -webkit-transform: translate(-280px, -80px) scale(0.9);
+    -ms-transform: translate(-280px, -80px) scale(0.9);
+    transform: translate(-280px, -80px) scale(0.9);
+  }
 }
 
 .slide-inner--HUD .slide-inner--HUD-box_hud_bg {
