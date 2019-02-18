@@ -8,7 +8,7 @@
   height: 100%;
 }
 
-.slide-inner--item_particle #particles {
+.slide-inner--item_particle #particle_screen {
   position: absolute;
   z-index: 996;
 }
