@@ -37,7 +37,8 @@
 
 .slide-inner--item_particle #particle_screen {
   position: absolute;
-  z-index: 996;
+  z-index: 1;
+  mix-blend-mode: lighten;
 }
 
 .slide-inner--item_mask {
