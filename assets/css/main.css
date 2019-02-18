@@ -1,7 +1,16 @@
+.nav-target_a::after {
+  content: url(https://guitarkid35.github.io/2018-GK-resume/);
+}
+
 /*---slide1 bg---*/
 .slide-inner--item {
   width: 100%;
   height: 100%;
+}
+
+.slide-inner--item_particle #particles {
+  position: absolute;
+  z-index: 996;
 }
 
 .slide-inner--item_mask {
@@ -383,7 +392,7 @@
   transform: rotateX(10deg) rotateY(40deg) rotateZ(0deg) scale(0.4);
   -webkit-filter: drop-shadow(0 0 0.75rem #2272D2) brightness(200%);
   filter: drop-shadow(0 0 0.75rem #2272D2) brightness(200%);
-  z-index: 1000;
+  z-index: 998;
 }
 
 .slide-inner--HUD .slide-inner--HUD-box_c1 {
@@ -395,8 +404,8 @@
   background-position: center center;
   -webkit-animation-name: HUD-rotate-a;
   animation-name: HUD-rotate-a;
-  -webkit-animation-duration: 8s;
-  animation-duration: 8s;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
   -webkit-animation-iteration-count: infinite;
@@ -404,6 +413,7 @@
   -webkit-animation-timing-function: ease;
   animation-timing-function: ease;
   opacity: 0;
+  z-index: 1000;
   -webkit-filter: drop-shadow(0 0 0.75rem #2272D2) brightness(150%);
   filter: drop-shadow(0 0 0.75rem #2272D2) brightness(150%);
 }
@@ -428,6 +438,7 @@
   opacity: 0;
   -webkit-filter: drop-shadow(0 0 0.75rem #2272D2) brightness(150%);
   filter: drop-shadow(0 0 0.75rem #2272D2) brightness(150%);
+  z-index: 999;
 }
 
 .slide-inner--HUD .slide-inner--HUD-box_bar {
@@ -604,9 +615,13 @@
     -webkit-transform: rotateX(10deg) rotateY(40deg) rotateZ(0deg) scale(0.4);
     transform: rotateX(10deg) rotateY(40deg) rotateZ(0deg) scale(0.4);
   }
-  100% {
+  70% {
     -webkit-transform: rotateX(10deg) rotateY(40deg) rotateZ(360deg) scale(0.4);
     transform: rotateX(10deg) rotateY(40deg) rotateZ(360deg) scale(0.4);
+  }
+  100% {
+    -webkit-transform: rotateX(10deg) rotateY(40deg) rotateZ(0deg) scale(0.4);
+    transform: rotateX(10deg) rotateY(40deg) rotateZ(0deg) scale(0.4);
   }
 }
 
@@ -615,9 +630,13 @@
     -webkit-transform: rotateX(10deg) rotateY(40deg) rotateZ(0deg) scale(0.4);
     transform: rotateX(10deg) rotateY(40deg) rotateZ(0deg) scale(0.4);
   }
-  100% {
+  70% {
     -webkit-transform: rotateX(10deg) rotateY(40deg) rotateZ(360deg) scale(0.4);
     transform: rotateX(10deg) rotateY(40deg) rotateZ(360deg) scale(0.4);
+  }
+  100% {
+    -webkit-transform: rotateX(10deg) rotateY(40deg) rotateZ(0deg) scale(0.4);
+    transform: rotateX(10deg) rotateY(40deg) rotateZ(0deg) scale(0.4);
   }
 }
 
