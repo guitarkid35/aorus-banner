@@ -61,43 +61,50 @@ html
             .swiper-slide
               .slide-inner(data-swiper-parallax='45%')
                 .overlay
-                //- .slide-inner--square
-                  svg#glow_line(viewBox='0 0 1334 761', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
-                    defs
-                      lineargradient#linearGradient-1(x1='100%', y1='0%', x2='0%', y2='100%')
-                        stop(stop-color='#FE7416', offset='0%')
-                        stop(stop-color='#C51E46', offset='100%')
-                    g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
-                      g#Desktop-HD(transform='translate(-53.000000, -132.000000)', stroke='url(#linearGradient-1)', stroke-width='2')
-                        rect#square(x='54', y='133', width='1332', height='759')
+                .slide-inner--image
+                  .slide-inner--HUD
+                    .slide-inner--HUD-box
+                      .slide-inner--HUD-box_logo
+                      .slide-inner--HUD-box_c1
+                      .slide-inner--HUD-box_c2
+                      svg.slide-inner--HUD-box_bar(width='127px', height='810px', viewBox='0 0 127 810', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                        g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                          g#Desktop-HD(transform='translate(-1875.000000, -568.000000)')
+                            g#HUD-bar(transform='translate(1875.000000, 568.000000)')
+                              path#Combined-Shape(d='M54,560 L54,501.472374 L111,444 L111,502.527626 L54,560 Z M53.9391368,364.004253 L49,359.44959 L111,297 L111,355.525362 L53.9391368,413 L53.9391368,364.004253 Z M54,486 L54,427.472374 L111,370 L111,428.527626 L54,486 Z M54,635 L54,576.472374 L111,519 L111,577.523058 L54,635 Z M54,708 L54,649.474638 L111,592 L111,650.525362 L54,708 Z M54,722.687645 L111,666 L111,727.342151 L54,790 L54,722.687645 Z M82.7855557,0 L127,0 L127,735.151893 L59.0026139,810 L38.6484174,810 L38.6484174,370.599129 L0,335.349049 L0,82.4524863 L82.7855557,0 Z M44.0098109,368.253049 L44.0098109,804.664706 L56.6288671,804.664706 L121.643154,733.091147 L121.643154,5.33076497 L85.009238,5.33076497 L5.35684618,84.6672221 L5.35684618,333.002969 L44.0098109,368.253049 Z', fill='#4A90E2')
+                              g#up(transform='translate(15.000000, 16.000000)', fill='#B9D1EE')
+                                polygon#Fill-10(points='96 43.6605173 96 0 73.7771453 0 0 73.2695299 0 139')
+                                polygon#Fill-9(points='0 213 96 117.836013 96 60 0 155.163987')
+                                polygon#Fill-8(points='0 287 96 191.836013 96 134 0 229.163987')  
+                                polygon#Fill-7(points='0 312.792205 25.3422513 336 96 265.34283 96 207 0 303.005401')                     
                 .slide-inner--info
                   h1
-                    | snowiest
+                    | world's 1st
                     br
-                    | worshipper
-                  a.ms-btn--slider(href='gallery.html', data-type='page-transition') take a look
-            //- Slide
-            .swiper-slide
-              .slide-inner(data-swiper-parallax='45%')
-                .overlay
-                .slide-inner--image(style="background-image: url('assets/images/home-slider/img-lg.jpg')")
-                .slide-inner--info
-                  h1
-                    | romantic
-                    br
-                    | chipping
-                  a.ms-btn--slider(href='gallery.html', data-type='page-transition') take a look
-            //- Slide
-            .swiper-slide
-              .slide-inner(data-swiper-parallax='45%')
-                .overlay
-                .slide-inner--image(style="background-image: url('assets/images/home-slider/img-lg.jpg')")
-                .slide-inner--info
-                  h1
-                    | farthest
-                    br
-                    | dawning
-                  a.ms-btn--slider(href='gallery.html', data-type='page-transition') take a look
+                    | tactical monitor
+                  a.ms-btn--slider(href='https://www.aorus.com/AD27QD', data-type='page-transition', target='_blank') take a look
+            //- //- Slide
+            //- .swiper-slide
+            //-   .slide-inner(data-swiper-parallax='45%')
+            //-     .overlay
+            //-     .slide-inner--image(style="background-image: url('assets/images/home-slider/img-lg.jpg')")
+            //-     .slide-inner--info
+            //-       h1
+            //-         | romantic
+            //-         br
+            //-         | chipping
+            //-       a.ms-btn--slider(href='gallery.html', data-type='page-transition') take a look
+            //- //- Slide
+            //- .swiper-slide
+            //-   .slide-inner(data-swiper-parallax='45%')
+            //-     .overlay
+            //-     .slide-inner--image(style="background-image: url('assets/images/home-slider/img-lg.jpg')")
+            //-     .slide-inner--info
+            //-       h1
+            //-         | farthest
+            //-         br
+            //-         | dawning
+            //-       a.ms-btn--slider(href='gallery.html', data-type='page-transition') take a look
           .swiper-nav-btn
             .swiper-button-prev.swiper-button-white prev
             .swiper-button-next.swiper-button-white next

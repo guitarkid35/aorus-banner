@@ -17,50 +17,8 @@
   background-size: cover;
   background-position: center;
 }
-/*---Square line---*/
-.slide-inner--square {
-  width: 65vw;
-  height: 65vh;
-  position: absolute;
-  @include absolute_center;
-  z-index: 998;
 
-  #glow_line { 
-    width: 100%;
-    height: 100%;
-    animation-name: move;
-    animation-duration: 4s;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
-    filter: drop-shadow( -.75px 0px 6px #FE7416);
-  }
-}
- 
-@keyframes move {
-  0%{
-    stroke-dasharray: 0, 4300px;
-  }
-  30%{
-    stroke-dasharray: 0, 4300px;
-  }
-  70%{
-    filter: brightness(100%);
-  }
-  89%{
-    filter: drop-shadow( 0px 0px 2px #EB3B00) brightness(1280%);
-  }
-  90%{
-    stroke-dasharray: 4300px, 4300px;
-  }
-  95%{
-    opacity: 1;
-  }
-  100%{
-    opacity: 0;
-  }
-}
-
-// /*---slide1 bg---*/
+/*---slide1 bg---*/
 .slide-inner--item {
   width: 100%;
   height: 100%;
@@ -78,7 +36,7 @@
     @include bg_center;
     z-index:1002;
     opacity: 0;
-    transform: scale(1.2);
+    transform: scale(1.5);
   }
   &_bg {
     @include full_screen;
@@ -91,7 +49,7 @@
     @include bg_center;
     z-index:1001;
     opacity: 0;
-    transform: scale(1.2);
+    transform: scale(1.5);
   }
   &_lens {
     @include full_screen;
@@ -210,5 +168,149 @@
   }
   100% {
     filter: grayscale(0%) brightness(100%);
+  }
+}
+/*---slide2 bg---*/
+.slide-inner--image {
+  background-image: url('../../assets/images/home-slider/HUD-bg.jpg');
+}
+.slide-inner--HUD {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  filter: brightness(500%);
+  .slide-inner--HUD-box {
+    width: 100%;
+    height: 100%;
+    transform: translate(-300px, -100px);
+    &_logo {
+      @include full_screen;
+      background-image: url('../../assets/images/home-slider/HUD-A.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      transform:rotateX(10deg) rotateY(40deg) rotateZ(0deg) scale(0.4);
+      filter: drop-shadow(0 0 0.75rem #2272D2) brightness(200%);
+      z-index: 1000;
+    }
+    &_c1 {
+      @include full_screen;
+      background-image: url('../../assets/images/home-slider/HUD-B.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      animation-name: HUD-rotate-a;
+      animation-duration: 8s;
+      animation-delay: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+      opacity: 0;
+      filter: drop-shadow(0 0 0.75rem #2272D2) brightness(150%);
+    }
+    &_c2 {
+      @include full_screen;
+      background-image: url('../../assets/images/home-slider/HUD-C.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      animation-name: HUD-rotate-b;
+      animation-duration: 8s;
+      animation-delay: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      opacity: 0;
+      filter: drop-shadow(0 0 0.75rem #2272D2) brightness(150%);
+    }
+    &_bar {
+      @include full_screen;
+      transform:rotateX(-28deg) rotateY(-25deg) rotateZ(-2deg) translate(350px,-20px) scale(0.3);
+      filter: drop-shadow(0 0 0.75rem #2272D2) brightness(150%);
+      #up {
+        #Fill-10 {
+          opacity: 0;
+          animation-name: fill-a;
+          animation-duration: 2s;
+          animation-delay :2s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+          animation-fill-mode: backwards;
+        }
+        #Fill-9 {
+          opacity: 0;
+          animation-name: fill-b;
+          animation-duration: 2s;
+          animation-delay :1.5s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+          animation-fill-mode: backwards;
+        }
+        #Fill-8 {
+          opacity: 0;
+          animation-name: fill-c;
+          animation-duration: 2s;
+          animation-delay :1s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+          animation-fill-mode: backwards;
+        }
+        #Fill-7 {
+          opacity: 0;
+          animation-name: fill-d;
+          animation-duration: 2s;
+          animation-delay :0.5s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+          animation-fill-mode: backwards;
+        }
+      }
+      @keyframes fill-a {
+        0% {opacity: 0;}
+        50%{opacity: 1;}
+        100% {opacity: 0;}
+      }
+      @keyframes fill-b {
+        0% {opacity: 0;}
+        50%{opacity: 1;}
+        100% {opacity: 0;}
+      }
+      @keyframes fill-c {
+        0% {opacity: 0;}
+        50%{opacity: 1;}
+        100% {opacity: 0;}
+      }
+      @keyframes fill-d {
+        0% {opacity: 0;}
+        50%{opacity: 1;}
+        100% {opacity: 0;}
+      }
+    }
+  }  
+}
+.swiper-slide-active .slide-inner--HUD {
+  opacity: 1;
+  filter: brightness(100%);
+  transition: all 1s ease 1s;
+}
+.swiper-slide-active .slide-inner--HUD-box_c1 {
+  opacity: 1;
+  transition: all .5s ease 1.5s;
+}
+.swiper-slide-active .slide-inner--HUD-box_c2 {
+  opacity: 1;
+  transition: all .5s ease 2s;
+}
+
+@keyframes HUD-rotate-a {
+  0% {
+    transform:rotateX(10deg) rotateY(40deg) rotateZ(0deg) scale(0.4);
+  }
+  100% {
+    transform:rotateX(10deg) rotateY(40deg) rotateZ(360deg) scale(0.4);
+  }
+}
+
+@keyframes HUD-rotate-b {
+  0% {
+    transform:rotateX(10deg) rotateY(40deg) rotateZ(0deg) scale(0.4);
+  }
+  100% {
+    transform:rotateX(10deg) rotateY(40deg) rotateZ(-360deg) scale(0.4);
   }
 }
