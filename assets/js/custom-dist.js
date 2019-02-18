@@ -12,7 +12,7 @@ var cliplight = TweenMax.to(".slide-inner--item_light",2,{
 timeline.set(".slide-inner--item_screen",{
   transformOrigin: "50% 50%"
 })
-var clipscreen = TweenMax.to(".slide-inner--item_screen",2,{
+var clipscreen = TweenMax.to(".slide-inner--item_screen",4,{
   css: { opacity:"1", transform: "scale(1)"},
   ease: Expo.easeOut
 
