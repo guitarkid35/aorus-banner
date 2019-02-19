@@ -41,6 +41,23 @@
   mix-blend-mode: lighten;
 }
 
+.slide-inner--item_particle_screen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../../assets/images/home-slider/robot-particle.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: 1000;
+  mix-blend-mode: screen;
+  -webkit-animation-name: robot-particle;
+  animation-name: robot-particle;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
 .slide-inner--item_mask {
   width: 100%;
   height: 100%;
@@ -177,6 +194,42 @@
   background-size: cover;
   background-position: center;
   z-index: 999;
+}
+
+@-webkit-keyframes robot-particle {
+  0% {
+    opacity: 0;
+    -webkit-filter: blur(0px) brightness(50%);
+    filter: blur(0px) brightness(50%);
+  }
+  60% {
+    opacity: 0.2;
+    -webkit-filter: blur(10px) brightness(100%);
+    filter: blur(10px) brightness(100%);
+  }
+  100% {
+    opacity: 0.3;
+    -webkit-filter: blur(20px) brightness(250%);
+    filter: blur(20px) brightness(250%);
+  }
+}
+
+@keyframes robot-particle {
+  0% {
+    opacity: 0;
+    -webkit-filter: blur(0px) brightness(50%);
+    filter: blur(0px) brightness(50%);
+  }
+  60% {
+    opacity: 0.2;
+    -webkit-filter: blur(10px) brightness(100%);
+    filter: blur(10px) brightness(100%);
+  }
+  100% {
+    opacity: 0.3;
+    -webkit-filter: blur(20px) brightness(250%);
+    filter: blur(20px) brightness(250%);
+  }
 }
 
 @-webkit-keyframes robot-mask {
