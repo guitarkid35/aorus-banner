@@ -428,7 +428,6 @@
   background-image: url("../../assets/images/home-slider/HUD-back.png");
   background-size: cover;
   background-position: center;
-  z-index: 9999;
   mix-blend-mode: lighten;
   -webkit-animation-name: robot-bg;
   animation-name: robot-bg;
@@ -479,6 +478,7 @@
   opacity: 0;
   -webkit-filter: brightness(500%);
   filter: brightness(500%);
+  z-index: 1;
 }
 
 .slide-inner--image .slide-inner--HUD-bars_barA {
@@ -573,7 +573,6 @@
   -webkit-transition: all 1s ease 1s;
   -o-transition: all 1s ease 1s;
   transition: all 1s ease 1s;
-  z-index: 999;
 }
 
 @-webkit-keyframes HUD-barsA {
@@ -892,6 +891,7 @@
   -webkit-filter: drop-shadow(0 0 0.75rem #2272D2) brightness(200%);
   filter: drop-shadow(0 0 0.75rem #2272D2) brightness(200%);
   z-index: 998;
+  margin-left: 0px;
 }
 
 .slide-inner--HUD .slide-inner--HUD-box_c1 {
