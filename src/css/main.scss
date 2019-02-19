@@ -214,6 +214,10 @@
     filter: grayscale(0%) brightness(100%);
   }
 }
+
+
+
+
 /*---slide2 bg---*/
 .slide-inner--image {
   background-image: url('../../assets/images/home-slider/HUD-bg.jpg');
@@ -222,7 +226,6 @@
     background-image: url('../../assets/images/home-slider/HUD-back.png');
     background-size: cover;
     background-position: center;
-    z-index: 9999;
     mix-blend-mode: lighten;
     animation-name: robot-bg;
     animation-duration: 4s;
@@ -245,6 +248,7 @@
     @include full_screen;
     opacity: 0;
     filter: brightness(500%);
+    z-index:1;
     &_barA {
       @include full_screen;
       background-image: url('../../assets/images/home-slider/HUD-bars.png');
@@ -305,7 +309,6 @@
   opacity: 1;
   filter: brightness(100%);
   transition: all 1s ease 1s;
-  z-index: 999;
 }
 
 @keyframes HUD-barsA{
@@ -439,6 +442,7 @@
       transform:rotateX(10deg) rotateY(40deg) rotateZ(0deg) scale(0.4);
       filter: drop-shadow(0 0 0.75rem #2272D2) brightness(200%);
       z-index: 998;
+      margin-left:0px;
     }
     &_c1 {
       @include full_screen;
