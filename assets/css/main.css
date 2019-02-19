@@ -396,16 +396,16 @@
 .slide-inner--HUD .slide-inner--HUD-box {
   width: 100%;
   height: 100%;
-  -webkit-transform: translate(-310px, -100px);
-  -ms-transform: translate(-310px, -100px);
-  transform: translate(-310px, -100px);
+  -webkit-transform: translate(230px, -65px);
+  -ms-transform: translate(230px, -65px);
+  transform: translate(230px, -65px);
 }
 
 @media (max-width: 1280px) {
   .slide-inner--HUD .slide-inner--HUD-box {
-    -webkit-transform: translate(-280px, -80px) scale(0.9);
-    -ms-transform: translate(-280px, -80px) scale(0.9);
-    transform: translate(-280px, -80px) scale(0.9);
+    -webkit-transform: translate(210px, -60px) scale(0.85);
+    -ms-transform: translate(210px, -60px) scale(0.85);
+    transform: translate(210px, -60px) scale(0.85);
   }
 }
 
@@ -481,10 +481,24 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  -webkit-transform: rotateX(-28deg) rotateY(-25deg) rotateZ(-2.3deg) translate(380px, -80px) scale(0.25);
-  transform: rotateX(-28deg) rotateY(-25deg) rotateZ(-2.3deg) translate(380px, -80px) scale(0.25);
+  -webkit-transform: rotateX(-28deg) rotateY(-25deg) rotateZ(-2.3deg) translate(370px, -80px) scale(0.25);
+  transform: rotateX(-28deg) rotateY(-25deg) rotateZ(-2.3deg) translate(370px, -80px) scale(0.25);
   -webkit-filter: drop-shadow(0 0 0.75rem #2272D2) brightness(150%);
   filter: drop-shadow(0 0 0.75rem #2272D2) brightness(150%);
+}
+
+@media (max-width: 1440px) {
+  .slide-inner--HUD .slide-inner--HUD-box_bar {
+    -webkit-transform: rotateX(-28deg) rotateY(-25deg) rotateZ(-2.3deg) translate(330px, -80px) scale(0.25);
+    transform: rotateX(-28deg) rotateY(-25deg) rotateZ(-2.3deg) translate(330px, -80px) scale(0.25);
+  }
+}
+
+@media (max-width: 1280px) {
+  .slide-inner--HUD .slide-inner--HUD-box_bar {
+    -webkit-transform: rotateX(-28deg) rotateY(-25deg) rotateZ(-2.3deg) translate(340px, -80px) scale(0.25);
+    transform: rotateX(-28deg) rotateY(-25deg) rotateZ(-2.3deg) translate(340px, -80px) scale(0.25);
+  }
 }
 
 .slide-inner--HUD .slide-inner--HUD-box_bar #up #Fill-10 {
