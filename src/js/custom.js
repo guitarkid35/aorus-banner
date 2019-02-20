@@ -15,7 +15,6 @@ timeline.set(".slide-inner--item_screen",{
 var clipscreen = TweenMax.to(".slide-inner--item_screen",2,{
   css: { opacity:"1", transform: "scale(1)"},
   ease: Expo.easeOut
-
 })
 var clipbg = TweenMax.to(".slide-inner--item_bg",2,{
   // opacity: 1
@@ -23,8 +22,11 @@ var clipbg = TweenMax.to(".slide-inner--item_bg",2,{
   ease: Expo.easeOut
 })
 
-timeline.add(clipeye,1)
+// slide1
 timeline.add(cliplens,0.5)
+timeline.add(clipeye,1)
 timeline.add(cliplight, 1.8)
 timeline.add(clipscreen, 2.8)
 timeline.add(clipbg, 2.8)
+
+
