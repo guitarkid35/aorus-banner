@@ -17,6 +17,11 @@
   background-size: cover;
   background-position: center;
 }
+@mixin bg_contain {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 /*---logo fadeIn---*/
 .ms-logo {
   animation-name: logofadeIn;
@@ -260,7 +265,7 @@
   &_bg {
     @include full_screen;
     background-image: url('../../assets/images/home-slider/HUD-center_bg.png');
-    @include bg_center;
+    @include bg_contain;
     opacity: 0;
   }
   &_center {
@@ -316,12 +321,12 @@
   &_left-arrow{
     @include full_screen;
     background-image: url('../../assets/images/home-slider/HUD-center_left-arrow.png');
-    @include bg_center;
+    @include bg_contain;
   }
   &_right-arrow {
     @include full_screen;
     background-image: url('../../assets/images/home-slider/HUD-center_right-arrow.png');
-    @include bg_center;
+    @include bg_contain;
   }
 }
 
