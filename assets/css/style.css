@@ -297,11 +297,16 @@ p {
 .ms-logo {
     position: relative;
     z-index: 7;
-    height: 50px;
+    height: 40px;
+}
+@media (max-width: 1280px) {
+  .ms-logo {
+    height: 38px;
+  }
 }
 @media (max-width: 500px) {
   .ms-logo {
-    height: 40px;
+    height: 35px;
   }
 }
 .logo-dark,
