@@ -1,0 +1,1 @@
+!function(c){c.preload=function(){for(var t="[object Array]"===Object.prototype.toString.call(arguments[0])?arguments[0]:arguments,r=[],o=t.length;o--;)r.push(c("<img />").attr("src",t[o]))}}(jQuery);
