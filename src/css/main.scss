@@ -358,7 +358,7 @@
   animation-duration: 8s;
   animation-delay: 2s;
   animation-fill-mode: both;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in;
 }
 .swiper-slide-active .slide-inner--center_bg {
   opacity: 1;
@@ -381,4 +381,62 @@
   opacity: 1;
   transition: all .5s ease 1.5s;
   transform: scaleY(1);
+}
+.swiper-slide-active .slide-inner--center_left-arrow {
+  opacity: 1;
+  transform: all .5s ease 1.5s;
+  animation-name: left-circle;
+  animation-duration: 8s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
+  @keyframes left-circle {
+    10% {
+      filter:drop-shadow(0 0 0.75rem #C51E46) brightness(50%);
+    }
+    30% {
+      filter:drop-shadow(0 0 0.75rem #C51E46) brightness(50%);
+    }
+    40% {
+      filter:drop-shadow(0 0 0.75rem #C51E46) brightness(300%);
+    }
+    60% {
+      filter:drop-shadow(0 0 0.75rem #C51E46) brightness(300%);
+    }
+    70% {
+      filter:drop-shadow(0 0 0.75rem #C51E46) brightness(300%);
+    }
+    100% {
+      filter:drop-shadow(0 0 0.75rem #C51E46) brightness(50%);
+    }
+  }
+}
+.swiper-slide-active .slide-inner--center_right-arrow {
+  opacity: 1;
+  transform: all .5s ease 1.5s;
+  animation-name: right-circle;
+  animation-duration: 8s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  @keyframes right-circle {
+    10% {
+      filter:drop-shadow(0 0 0.75rem #C51E46) brightness(50%);
+    }
+    30% {
+      filter:drop-shadow(0 0 0.75rem #C51E46) brightness(300%);
+    }
+    40% {
+      filter:drop-shadow(0 0 0.75rem #C51E46) brightness(50%);
+    }
+    60% {
+      filter:drop-shadow(0 0 0.75rem #C51E46) brightness(50%);
+    }
+    70% {
+      filter:drop-shadow(0 0 0.75rem #C51E46) brightness(50%);
+    }
+    100% {
+      filter:drop-shadow(0 0 0.75rem #C51E46) brightness(300%);
+    }
+  }
 }
