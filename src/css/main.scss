@@ -71,6 +71,7 @@
     @include bg_center;
     z-index:1002;
     opacity: 0;
+    will-change: transform;
     transform: scale(1.5);
   }
   &_bg {
@@ -84,6 +85,7 @@
     @include bg_center;
     z-index:1001;
     opacity: 0;
+    will-change: transform;
     transform: scale(1.5);
   }
   &_lens {
@@ -224,6 +226,7 @@
 /*---slide2 bg---*/
 .slide-inner--section2 {
   @include full_screen;
+  will-change: transform;
   background-image: url('../../assets/images/home-slider/HUD-bg.jpg');
   @include bg_center;
   opacity: 0;
@@ -276,6 +279,7 @@
     opacity: 0;
     filter: drop-shadow(0 0 0.75rem #2E58A6) brightness(300%);
     z-index: 999;
+    will-change: transform;
     @keyframes center_center {
       0% { transform: rotate(0deg); }
       50% { transform: rotate(360deg); }
@@ -294,6 +298,7 @@
     animation-timing-function: ease-in;
     opacity: 0;
     filter: drop-shadow(0 0 0.75rem #2272D2) brightness(200%);
+    will-change: transform;
     @keyframes center-out {
       0% { transform: rotate(0deg); }
       50% { transform: rotate(360deg); }
@@ -340,8 +345,6 @@
   transition-duration: 1.5s;
   transition-delay: 6.5s;
   transition-timing-function: ease;
-  mix-blend-mode: lighten;
-  background-blend-mode: screen;
   filter: brightness(100%); 
 }
 .swiper-slide-active .slide-inner--center {
@@ -389,6 +392,7 @@
   animation-delay: 2s;
   animation-fill-mode: both;
   animation-timing-function: ease-in;
+  will-change: transform;
   @keyframes left-circle {
     10% {
       filter:drop-shadow(0 0 0.75rem #C51E46) brightness(300%);
@@ -415,6 +419,7 @@
   animation-delay: 2s;
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
+  will-change: transform;
   @keyframes right-circle {
     10% {
       filter:drop-shadow(0 0 0.75rem #C51E46) brightness(50%);

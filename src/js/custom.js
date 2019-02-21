@@ -1,3 +1,26 @@
+// preload
+$.preload(
+  '../../assets/images/home-slider/HUD-screen.png',
+  '../../assets/images/home-slider/robot-screen.png',
+  '../../assets/images/home-slider/robot-body-logo.png',
+  '../../assets/images/home-slider/HUD-center.png',
+  '../../assets/images/home-slider/HUD-center_right-circle.png',
+  '../../assets/images/home-slider/HUD-bg.jpg',
+  '../../assets/images/home-slider/HUD-center_out.png',
+  '../../assets/images/home-slider/HUD-center_bg.png',
+  '../../assets/images/home-slider/robot-body.jpg',
+  '../../assets/images/home-slider/HUD-center_info.png',
+  '../../assets/images/home-slider/HUD-center_left-arrow.png',
+  '../../assets/images/home-slider/robot-lens.png',
+  '../../assets/images/home-slider/robot-particle.jpg',
+  '../../assets/images/home-slider/robot-bg.png',
+  '../../assets/images/home-slider/robot-body-light.png',
+  '../../assets/images/home-slider/HUD-center_left-circle.png',
+  '../../assets/images/home-slider/HUD-center_right-arrow.png',
+  '../../assets/images/home-slider/robot-body-eye.png',
+  '../../assets/video/particle_screen.mp4',
+);
+// animation
 var timeline = new TimelineMax({})
 
 var clipeye = TweenMax.to(".slide-inner--item_eye",1,{
