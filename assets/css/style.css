@@ -732,7 +732,7 @@ p {
 }
 .swiper-slide-active .slide-inner--info {
     opacity: 1;
-    transition: opacity 1s ease 10s;
+    transition: opacity 1s ease 6s;
 }
 .slide-inner--info h1 {
     margin: 10px 0;

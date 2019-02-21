@@ -236,17 +236,13 @@
       transform: translateX(200px) scale(1.3);
       filter: blur(10px) brightness(20%);
     }
-    40% {
-      transform: translateX(-500px) scale(1.4);
-      filter: blur(10px) brightness(20%);
-    }
     60% {
       transform: translateX(-300px) scale(1.4);
-      filter: blur(5px) brightness(20%);
+      filter: blur(3px) brightness(20%);
     }
-    80% {
-      transform: translateX(400px) scale(1.2);
-      filter: blur(3px) brightness(50%);
+    90% {
+      transform: translateX(150px) scale(1.5);
+      filter: blur(2px) brightness(50%);
     }
     100% {
       transform: translateX(0px) scale(1);
@@ -336,13 +332,13 @@
   opacity: 0;
   mix-blend-mode: lighten;
   background-blend-mode: screen;
-  filter: brightness(800%); 
+  filter: brightness(1000%); 
 }
 .swiper-slide-active .slide-inner--HUD {
   opacity: 0.7;
   transition-property:opacity,filter;
   transition-duration: 1.5s;
-  transition-delay: 10s;
+  transition-delay: 6.5s;
   transition-timing-function: ease;
   mix-blend-mode: lighten;
   background-blend-mode: screen;
@@ -350,18 +346,18 @@
 }
 .swiper-slide-active .slide-inner--center {
   animation-name: center;
-  animation-duration: 10.5s;
+  animation-duration: 6.5s;
   animation-fill-mode: both;
   opacity: 1;
 }
 .swiper-slide-active .slide-inner--section2 {
   opacity: 1;
-  transition: all 1s ease 3s;
+  transition: all 1s ease 1.5s;
   animation-name: section2;
-  animation-duration: 8s;
+  animation-duration: 4.5s;
   animation-delay: 2s;
   animation-fill-mode: both;
-  animation-timing-function: ease-in;
+  animation-timing-function: ease;
 }
 .swiper-slide-active .slide-inner--center_bg {
   opacity: 1;
@@ -389,7 +385,7 @@
   opacity: 1;
   transform: opacity .5s ease;
   animation-name: left-circle;
-  animation-duration: 8s;
+  animation-duration: 4.5s;
   animation-delay: 2s;
   animation-fill-mode: both;
   animation-timing-function: ease-in;
@@ -399,9 +395,6 @@
     }
     30% {
       filter:drop-shadow(0 0 0.75rem #C51E46) brightness(50%);
-    }
-    40% {
-      filter:drop-shadow(0 0 0.75rem #C51E46) brightness(300%);
     }
     60% {
       filter:drop-shadow(0 0 0.75rem #C51E46) brightness(300%);
@@ -418,7 +411,7 @@
   opacity: 1;
   transform: opacity .5s ease ;
   animation-name: right-circle;
-  animation-duration: 8s;
+  animation-duration: 4.5s;
   animation-delay: 2s;
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
@@ -428,9 +421,6 @@
     }
     30% {
       filter:drop-shadow(0 0 0.75rem #C51E46) brightness(300%);
-    }
-    40% {
-      filter:drop-shadow(0 0 0.75rem #C51E46) brightness(50%);
     }
     60% {
       filter:drop-shadow(0 0 0.75rem #C51E46) brightness(50%);
