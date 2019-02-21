@@ -329,7 +329,6 @@
     @include bg_contain;
   }
 }
-
 .slide-inner--HUD {
   @include full_screen;
   background-image: url('../../assets/images/home-slider/HUD-screen.png');
@@ -338,15 +337,16 @@
   mix-blend-mode: lighten;
   background-blend-mode: screen;
   filter: brightness(800%); 
-  transform: translateX(50px);
 }
 .swiper-slide-active .slide-inner--HUD {
   opacity: 0.7;
-  transition: all 1.5s ease 10s;
+  transition-property:opacity,filter;
+  transition-duration: 1.5s;
+  transition-delay: 10s;
+  transition-timing-function: ease;
   mix-blend-mode: lighten;
   background-blend-mode: screen;
   filter: brightness(100%); 
-  transform: translateX(0px);
 }
 .swiper-slide-active .slide-inner--center {
   animation-name: center;
@@ -387,7 +387,7 @@
 }
 .swiper-slide-active .slide-inner--center_left-arrow {
   opacity: 1;
-  transform: all .5s ease ;
+  transform: opacity .5s ease;
   animation-name: left-circle;
   animation-duration: 8s;
   animation-delay: 2s;
@@ -395,7 +395,7 @@
   animation-timing-function: ease-in;
   @keyframes left-circle {
     10% {
-      filter:drop-shadow(0 0 0.75rem #C51E46) brightness(50%);
+      filter:drop-shadow(0 0 0.75rem #C51E46) brightness(300%);
     }
     30% {
       filter:drop-shadow(0 0 0.75rem #C51E46) brightness(50%);
@@ -416,7 +416,7 @@
 }
 .swiper-slide-active .slide-inner--center_right-arrow {
   opacity: 1;
-  transform: all .5s ease ;
+  transform: opacity .5s ease ;
   animation-name: right-circle;
   animation-duration: 8s;
   animation-delay: 2s;

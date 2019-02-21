@@ -29,4 +29,23 @@ timeline.add(cliplight, 1.8)
 timeline.add(clipscreen, 2.8)
 timeline.add(clipbg, 2.8)
 
-
+// onmouseMove
+var items = document.getElementsByClassName("slide-inner--HUD"); 
+document.addEventListener('mousemove', function (evt){ 
+  var x = evt.clientX; 
+  var y = evt.clientY; 
+  //console.log(x); 
+  var winWidth = window.innerWidth; 
+  var winHeight = window.innerHeight; 
+  var halfWidth = winWidth / 2; 
+  var halfHeight = winHeight / 2; 
+  var rx = x - halfWidth; 
+  var ry = halfHeight - y; 
+  var length = items.length; 
+  var max = 28; 
+  for (var i = 0 ; i < length ; i++) { 
+  var dx = (items[i].getBoundingClientRect().width/max)*(rx / -halfWidth); 
+  var dy = (items[i].getBoundingClientRect().height/max)*(ry / halfHeight); 
+  items[i].style['transform'] = items[i].style['-webkit-transform'] = 'translate('+dx+'px,'+dy+'px)'; 
+  } 
+}, false); 
