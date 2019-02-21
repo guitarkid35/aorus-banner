@@ -384,7 +384,7 @@
 }
 .swiper-slide-active .slide-inner--center_left-arrow {
   opacity: 1;
-  transform: all .5s ease 1.5s;
+  transform: all .5s ease ;
   animation-name: left-circle;
   animation-duration: 8s;
   animation-delay: 2s;
@@ -413,7 +413,7 @@
 }
 .swiper-slide-active .slide-inner--center_right-arrow {
   opacity: 1;
-  transform: all .5s ease 1.5s;
+  transform: all .5s ease ;
   animation-name: right-circle;
   animation-duration: 8s;
   animation-delay: 2s;
