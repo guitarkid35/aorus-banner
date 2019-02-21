@@ -240,7 +240,7 @@
       transform: translateX(-300px) scale(1.4);
       filter: blur(3px) brightness(20%);
     }
-    90% {
+    85% {
       transform: translateX(150px) scale(1.5);
       filter: blur(2px) brightness(50%);
     }
@@ -365,11 +365,11 @@
 }
 .swiper-slide-active .slide-inner--center_center {
   opacity: 1;
-  transition: all 1s ease 1.5s;
+  transition: all 1s ease-in 1.5s;
 }
 .swiper-slide-active .slide-inner--center_center-out {
   opacity: 1;
-  transition: all 1s ease 2s;
+  transition: all 1s ease-in 2.5s;
 }
 .swiper-slide-active .slide-inner--center_left-circle {
   opacity: 1;
@@ -399,7 +399,7 @@
     60% {
       filter:drop-shadow(0 0 0.75rem #C51E46) brightness(300%);
     }
-    70% {
+    85% {
       filter:drop-shadow(0 0 0.75rem #C51E46) brightness(300%);
     }
     100% {
@@ -425,7 +425,7 @@
     60% {
       filter:drop-shadow(0 0 0.75rem #C51E46) brightness(50%);
     }
-    70% {
+    85% {
       filter:drop-shadow(0 0 0.75rem #C51E46) brightness(50%);
     }
     100% {
