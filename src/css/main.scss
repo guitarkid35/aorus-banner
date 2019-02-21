@@ -273,7 +273,7 @@
     background-image: url('../../assets/images/home-slider/HUD-center.png');
     @include bg_center;
     animation-name:center_center;
-    animation-duration: 4s;
+    animation-duration: 13s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
@@ -283,7 +283,7 @@
     @keyframes center_center {
       0% { transform: rotate(0deg); }
       50% { transform: rotate(360deg); }
-      80% { transform: rotate(720deg); }
+      80% { transform: rotate(520deg); }
       100% { transform: rotate(0deg); }
     }
   }
@@ -292,7 +292,7 @@
     background-image: url('../../assets/images/home-slider/HUD-center_out.png');
     @include bg_center;
     animation-name:center-out;
-    animation-duration: 5s;
+    animation-duration: 10s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;

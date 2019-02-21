@@ -31,3 +31,10 @@ timeline.add(clipbg, 2.8)
 
 
 
+//////////////////////////////////////
+
+/*  HUD onMouseMove */
+
+
+
+
