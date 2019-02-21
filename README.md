@@ -1,4 +1,4 @@
-# aorus-feature
+# aorus-banner
 
 > pure css project
 
