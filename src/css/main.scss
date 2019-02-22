@@ -350,17 +350,6 @@
   transition-delay: 6.2s;
   transition-timing-function: ease;
   filter: brightness(100%); 
-  animation-name:HUD;
-  animation-iteration-count: infinite;
-  animation-duration: 3s;
-  animation-fill-mode: both;
-  animation-timing-function: ease-in-out;
-  @keyframes HUD {
-    0% { margin-top: 0;}
-    50% {margin-top: 10px;}
-    100% {margin-top: 0px;}
-
-  }
 }
 .swiper-slide-active .slide-inner--center {
   animation-name: center;
