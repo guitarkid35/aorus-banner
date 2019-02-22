@@ -65,10 +65,10 @@ document.addEventListener('mousemove', function (evt){
   var rx = x - halfWidth; 
   var ry = halfHeight - y; 
   var length = items.length; 
-  var max = 28; 
+  var max = 280; 
   for (var i = 0 ; i < length ; i++) { 
   var dx = (items[i].getBoundingClientRect().width/max)*(rx / -halfWidth); 
   var dy = (items[i].getBoundingClientRect().height/max)*(ry / halfHeight); 
-  items[i].style['transform'] = items[i].style['-webkit-transform'] = 'translate('+dx+'px,'+dy+'px)'; 
+  items[i].style['transform'] = items[i].style['-webkit-transform'] = 'translate('+dx+'px)'; 
   } 
 }, false); 
