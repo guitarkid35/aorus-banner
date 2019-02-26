@@ -224,6 +224,14 @@
 
 
 /*---slide2 bg---*/
+.slide-inner {
+  .slide-inner--info {
+    h1 {
+      text-shadow: 0 0px 10px  #D7DDED !important,
+                   0 0 1px #FE7416  !important ;
+    }
+  }
+}
 .slide-inner--section2 {
   @include full_screen;
   will-change: transform;
@@ -337,12 +345,8 @@
 .slide-inner--HUD {
   @include full_screen;
   opacity: 0;
-  filter: brightness(1000%); 
-  #particle_screen {
-      position: absolute;
-      z-index: 1;
-      mix-blend-mode: screen;
-  }
+  filter: brightness(1000%);
+  mix-blend-mode: screen;
 }
 .swiper-slide-active .slide-inner--HUD {
   opacity: 0.7;
