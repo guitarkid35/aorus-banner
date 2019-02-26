@@ -336,12 +336,13 @@
 }
 .slide-inner--HUD {
   @include full_screen;
-  background-image: url('../../assets/images/home-slider/HUD-screen.png');
-  @include bg_center;
   opacity: 0;
-  mix-blend-mode: lighten;
-  background-blend-mode: screen;
   filter: brightness(1000%); 
+  #particle_screen {
+      position: absolute;
+      z-index: 1;
+      mix-blend-mode: screen;
+  }
 }
 .swiper-slide-active .slide-inner--HUD {
   opacity: 0.7;
