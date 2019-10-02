@@ -36,7 +36,7 @@ html
                   span.ms-btn home
                   span.nav-item__label Back to home page
               li.nav-item.nav-target_a
-                a(href='https://guitarkid35.github.io/2018-GK-resume/',target='_blank')
+                a(href='https://guitarkid35.github.io/2018-GK/',target='_blank')
                   span.ms-btn about
                   span.nav-item__label Learn more about the GK
       //- Container
@@ -52,7 +52,7 @@ html
                   .slide-inner--item_particle_screen
                   .slide-inner--item_particle
                     video#particle_screen(controls='', autoplay='', muted='', loop='')
-                      //- source(src='../assets/video/particle_screen.webm', type='video/webm')
+                      source(src='../assets/video/particle_screen.webm', type='video/webm')
                       source(src='../assets/video/particle_screen.mp4', type='video/mp4')
                   .slide-inner--item_mask
                   .slide-inner--item_screen
@@ -76,25 +76,16 @@ html
                     .slide-inner--center_right-circle
                     .slide-inner--center_left-arrow
                     .slide-inner--center_right-arrow
-                  .slide-inner--HUD
-
+                .slide-inner--HUD
+                  video(controls='', autoplay='', muted='', loop='',height='100%', preload='')
+                    source(src='../assets/video/HUD.webm', type='video/webm')
+                    //- source(src='../assets/video/HUD.mp4', type='video/mp4')
                 .slide-inner--info
                   h1
                     | world's 1st
                     br
                     | tactical monitor
                   a.ms-btn--slider(href='https://www.aorus.com/AD27QD', target='_blank') take a look
-            //- //- Slide
-            //- .swiper-slide
-            //-   .slide-inner(data-swiper-parallax='45%')
-            //-     .overlay
-            //-     .slide-inner--image(style="background-image: url('assets/images/home-slider/img-lg.jpg')")
-            //-     .slide-inner--info
-            //-       h1
-            //-         | romantic
-            //-         br
-            //-         | chipping
-            //-       a.ms-btn--slider(href='gallery.html', data-type='page-transition') take a look
           .swiper-nav-btn
             .swiper-button-prev.swiper-button-white prev
             .swiper-button-next.swiper-button-white next
